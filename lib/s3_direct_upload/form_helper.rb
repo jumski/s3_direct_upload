@@ -54,7 +54,7 @@ module S3DirectUpload
       end
 
       def url
-        "https://s3.amazonaws.com/#{@options[:bucket]}"
+        "https://#{@options[:bucket]}.s3.amazonaws.com/"
       end
 
       def policy
